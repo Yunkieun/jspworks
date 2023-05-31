@@ -8,7 +8,7 @@
 </head>
 <body>
 	<!-- 선언문 태그 -->
-	<%
+	<%!
 		int num1 = 10, num2 = 20;
 		int sum;
 	%>
