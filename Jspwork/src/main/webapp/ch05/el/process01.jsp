@@ -4,25 +4,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원 가입</title>
+<title>회원 정보</title>
 <style>
 	#container{width: 80%; margin: 30px auto; text-align: center;}
-	fildset{width: 450px; margin: 0 auto;}
-	label{width: 100px; float: left; text-align: right;}
-	table{width: 660px; margin: 0 auto;}
-	table, th, td{border: 1px solid #ccc; border-collapse: collapse;}
-	table th, hd{padding: 10px;}
+	fieldset{width: 450px; margin: 0 auto;}
+	label{width: 100px; float:left; text-align: right;}
+	table{width: 600px; margin: 0 auto;}
+	table, th, td{border: 1px solid #ccc; border-collapse: collapse }
+	table th, td{padding: 10px;}
 	table thead{background: #eee;}
 </style>
 </head>
 <%
-	// 
-	request.setCharacterEncoding("utf-8"); // 한글 인코딩
-	// 데이터 name 속성 받기
-	String id = request.getParameter("userid");
+	//MVC -> Controller 역할
+	request.setCharacterEncoding("utf-8"); //한글 인코딩
+
+	//데이터 name 속성 받기
+	String id =	request.getParameter("userid");
 	String pwd = request.getParameter("passwd");
 	String name = request.getParameter("uname");
-
 %>
 <body>
 	<div id="container">
@@ -38,13 +38,13 @@
 			</thead>
 			<tbody>
 				<tr>
+					<!-- MVC -> Model(데이터) -->
 					<td><%=id %></td>
 					<td><%=pwd %></td>
 					<td><%=name %></td>
 				</tr>
 			</tbody>
 		</table>
-
 	</div>
 </body>
 </html>

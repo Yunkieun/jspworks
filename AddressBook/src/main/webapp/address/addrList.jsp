@@ -36,19 +36,21 @@
 					<td><%=aB.getTel() %></td>
 					<td><%=aB.getEmail() %></td>
 					<td><%=aB.getGender() %></td>
-					<td><a href="addrView.jsp?username=<%=aB.getUsername() %>">
-						<button type="button">보기</button>
+					<td>
+						<a href="addrView.jsp?username=<%=aB.getUsername() %>">
+							<button type="button">보기</button>
 						</a>
 					</td>
 					<td>
-						<a href="addrDelete.jsp?username=<%=aB.getUsername() %>"
-							onclick="return confirm('정말로 삭제하시겠습니까?')">
-						<button type="button">삭제</button>
-						</a>
+					   <a href="addrDelete.jsp?username=<%=aB.getUsername() %>"
+					   	  onclick="return confirm('정말로 삭제하시겠습니까?')">
+					   	<button type="button">삭제</button>
+					   </a>
 					</td>
 				</tr>
 				<% } %>
-			</tbody>		
+			</tbody>
+		
 		</table>
 	</div>
 </body>

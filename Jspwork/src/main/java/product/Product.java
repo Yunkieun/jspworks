@@ -17,6 +17,4 @@ public class Product {
 	public int getNum2() {
 		return num2;
 	}
-	
-
 }

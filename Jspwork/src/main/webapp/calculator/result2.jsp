@@ -1,7 +1,6 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<jsp:useBean id="calc" class="beans.Calculator"/>
+<jsp:useBean id="calc" class="beans.Calculator" />
 <jsp:setProperty property="num1" name="calc"/>
 <!-- num1은 setNum1()과 같음 -->
 <jsp:setProperty property="num2" name="calc"/>
@@ -15,5 +14,5 @@
 		calc.calculate();
 	%>
 	<!-- result는 getResult()와 같음 -->
-	<p>계산결과: <jsp:getProperty property="result" name="calc"/></p>
+	<p>계산 결과: <jsp:getProperty property="result" name="calc"/> </p>
 </div>

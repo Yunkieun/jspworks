@@ -16,7 +16,7 @@
 			<label for="passwd">비밀번호 </label>
 			<input type="password" id="passwd" name="passwd">
 		</p>
-		<p><input type="submit" value="로그인">
+		<p><input type="submit" value="로그인"></p>
 	</form>
 </body>
 </html>

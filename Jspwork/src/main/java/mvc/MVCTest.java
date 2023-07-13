@@ -19,11 +19,10 @@ public class MVCTest extends HttpServlet {
 		String season = "여름";
 		String[] seasons = {"봄", "여름", "가을", "겨울"};
 		
-		ArrayList<Integer>numberList = new ArrayList<>();
+		ArrayList<Integer> numberList = new ArrayList<>();
 		numberList.add(10);
 		numberList.add(20);
 		numberList.add(30);
-		
 		
 		//모델 생성해서 view에 보냄
 		request.setAttribute("season", season);

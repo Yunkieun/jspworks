@@ -7,13 +7,14 @@
 <meta charset="UTF-8">
 <title>JSTL 예제</title>
 <%
-	// 모델 생성
+	//모델 생성
 	pageContext.setAttribute("cart", "계란");
 %>
 </head>
 <body>
 	<h3>${cart}</h3>
-	<%-- 	<%
+
+	<%-- <%
 		int num = 10;
 	
 		if(num % 2 == 0){
@@ -31,10 +32,11 @@
 		<c:out value="${'홀수입니다.'}"></c:out>
 	</c:if>
 	<br>
-	<!-- 구구단 5단 -->
+	
+	<!-- 구구단 출력  -->
 	<c:set var="dan" value="4" />
 	<c:forEach var="i" begin="1" end="9">
-		<c:out value="${dan} x ${i} = ${dan*i}"></c:out><br>
+		<c:out value="${dan} x ${i} = ${dan*i}" /><br>
 	</c:forEach>
 	
 	<!-- 구구단 전체 -->
@@ -44,5 +46,6 @@
 		</c:forEach>
 		<br>
 	</c:forEach>
+	
 </body>
 </html>

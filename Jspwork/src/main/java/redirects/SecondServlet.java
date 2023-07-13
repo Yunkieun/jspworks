@@ -10,19 +10,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 @WebServlet("/redir/second")
 public class SecondServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-
 	public void init(ServletConfig config) throws ServletException {
-		
+		// TODO Auto-generated method stub
 	}
 
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 컨텐츠 유형 설정
+		//컨테츠 유형 설정
 		response.setContentType("text/html; charset=utf-8");
 		
 		PrintWriter out = response.getWriter();
@@ -36,7 +33,7 @@ public class SecondServlet extends HttpServlet {
 	}
 	
 	public void destroy() {
-		
+		// TODO Auto-generated method stub
 	}
 
 }

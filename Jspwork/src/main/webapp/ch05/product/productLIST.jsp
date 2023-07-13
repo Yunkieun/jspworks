@@ -7,12 +7,11 @@
 <meta charset="UTF-8">
 <title>상품 목록</title>
 <style>
-	#container{width: 80%; margin: 30 auto; text-align: center;}
+	#container{width: 80%; margin: 30px auto; text-align: center;}
 	select{padding: 5px;}
 </style>
 </head>
 <jsp:useBean id="product" class="product.Product" />
-<jsp:setProperty property="productList" name="product"/>
 <body>
 	<div id="container">
 		<h2>상품 목록</h2>
@@ -22,8 +21,8 @@
 			<%-- product.productList -> <%=product.getProductList() %> --%>
 			<c:forEach var="product" items="${product.productList}">
 				<option><c:out value="${product}" /></option>
-				<!--  <option>참외</option>
-				 <option>수박</option> -->
+				<!-- <option>참외</option>
+				<option>수박</option> -->
 			</c:forEach>
 			</select>
 			<button type="submit">선택</button>

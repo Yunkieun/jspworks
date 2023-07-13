@@ -11,18 +11,17 @@
 		let form = document.form1;
 		let dan = form.dan;
 		
-		if(dan.value =="" || isNaN(dan.value)){  // NaN = Not a Number
+		if(dan.value == "" || isNaN(dan.value)){ //NaN = Not a Number
 			alert("숫자를 입력해 주세요");
 			dan.focus();
 			return false;
 		}else if(dan.value < 1 || dan.value > 19){
-			alert("1~19단까지 입력 가능합니다.");
+			alert("1 ~ 19단까지 입력 가능합니다.");
 			dan.focus();
 			return false;
-		}
 		}else{
 			form.submit();
-		} 
+		}
 	}
 </script>
 </head>
@@ -32,8 +31,7 @@
 			<label for="dan">단 </label>
 			<input type="text" name="dan" id="dan">
 		</p>
-		<p><button type="button" onclick="guguCheck()">확인</button>
+		<p><button type="button" onclick="guguCheck()">확인</button> 
 	</form>
-
 </body>
 </html>

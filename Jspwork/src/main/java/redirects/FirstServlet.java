@@ -13,27 +13,23 @@ import javax.servlet.http.HttpServletResponse;
 public class FirstServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-
 	public void init(ServletConfig config) throws ServletException {
 		
 	}
 
-
-	public void destroy() {
-		
-	}
-
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 문자 인코딩 설정
+		//문자 인코딩 설정
 		request.setCharacterEncoding("utf-8");
 		
-		// SecondServlet으로 이동(/redir/second)
+		//SecondServlet로 이동(/redir/second)
 		response.sendRedirect("second");
 	}
 
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+	}
+	
+	public void destroy() {
 		
 	}
 

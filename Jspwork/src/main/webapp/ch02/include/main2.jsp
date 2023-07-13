@@ -7,7 +7,7 @@
 <title>메인 페이지</title>
 </head>
 <body>
-    <!-- Action Tag 사용 -->
+	<!-- Action Tag 사용 -->
 	<jsp:include page="header.jsp"></jsp:include>
 	
 	<h3>방문해 주셔서 감사합니다.</h3>

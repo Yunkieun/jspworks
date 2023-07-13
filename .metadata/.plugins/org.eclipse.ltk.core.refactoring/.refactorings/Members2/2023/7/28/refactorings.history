@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Members2/src/main/java/bundle/message_en.properies&apos; to &apos;message_en.properties&apos;" description="Rename resource &apos;message_en.properies&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/bundle/message_en.properies" name="message_en.properties" stamp="1689133732554" updateReferences="true"/>
+</session>
