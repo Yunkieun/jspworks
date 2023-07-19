@@ -1,0 +1,17 @@
+package product;
+
+import java.io.Serializable;
+
+public class Product implements Serializable{
+	private static final long serialVersionUID = 11L;
+	
+	private String productId;  // 상품 코드
+	private String pname;
+	private Integer unitPrice;
+	private String description;
+	private String manufacturer;
+	private String category;
+	private Long unitsInStock;
+	private String condition;
+	private String productImage;
+}

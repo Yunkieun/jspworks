@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품 선택</title>
+<link rel="stylesheet" href="../resources/css/style.css">
+</head>
+<body>
+	<div id="container">
+		<h2>상품선택</h2>
+		<hr>
+		
+		<form action="addProduct.jsp" method="post">
+			<select name="product">
+				<option value="수박">수박</option>
+			</select>
+		</form>
+	</div>
+</body>
+</html>

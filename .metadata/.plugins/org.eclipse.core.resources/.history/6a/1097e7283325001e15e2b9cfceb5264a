@@ -1,0 +1,27 @@
+package product;
+
+public class Product {
+	
+	private String pid;
+	private String pname;
+	private String maker;
+	private int privce;
+	private String date;
+	
+	// 생성자
+	public Product(String pid, String pname, String maker,
+			int price, String date){
+		super();
+			this.pid = pid;
+			this.pname = pname;
+			this.maker = maker;
+			this.price = price;
+			this.date = date;
+	}
+	
+	// get(), set()
+	public String getPid() {
+		return pid;
+	}
+
+}

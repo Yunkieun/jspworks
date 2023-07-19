@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;addrForm.jsp&apos; to &apos;addrForm.jsp&apos;&#x0D;&#x0A;- Original project: &apos;AddressBook&apos;&#x0D;&#x0A;- Destination element: &apos;addrForm.jsp&apos;&#x0D;&#x0A;- Original element: &apos;addrForm.jsp&apos;" description="Copy file" element1="src/main/webapp/address/addrForm.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1686110114259" target="/AddressBook/src/main/webapp/address/addrForm.jsp" units="0" version="1.0"/>
+</session>

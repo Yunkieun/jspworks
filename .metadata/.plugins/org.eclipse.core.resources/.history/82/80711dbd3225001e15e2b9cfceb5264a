@@ -1,0 +1,19 @@
+package product;
+
+import java.util.HashMap;
+import java.util.Map;
+
+// Product를 관리할 클래스(DAO)
+public class ProductService {
+	// 자료 구조(Data Structure - Collection)
+	Map<String, Product> products = new HashMap<>();
+	
+	// 생성자 - 상품 생성
+	public ProductService() {
+		Product p1 = new Product("p-11", "Galaxy21", "삼성전자",
+				1000000, "2023-03-16");
+		
+		// 회원 생성 후 저장
+		products.put("p-11", p1);
+	}
+}

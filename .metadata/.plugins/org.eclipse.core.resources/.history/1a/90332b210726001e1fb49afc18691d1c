@@ -1,0 +1,7 @@
+package product;
+
+import java.sql.Connection;
+
+public class ProductDAO {
+	Connection conn = null;
+}

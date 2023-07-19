@@ -1,0 +1,34 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>user 목록</title>
+</head>
+<body>
+	<%@ include file="dbconn.jsp" %>
+	
+	<%
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try{
+			String sql = "select * from user";
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			out.println("<h2>회원명단</h2>");
+			
+			while(rs.next()){
+				out.println(rs.getInt("id"));
+				out.println(rs.getString("pwd"));
+			}
+		}catch(Exception e){
+			out.println(e.getMessage());
+		}
+
+	%>
+</body>
+</html>
