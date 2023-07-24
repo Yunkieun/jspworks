@@ -1,6 +1,6 @@
 <%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Connection"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page import="java.sql.Connection" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,7 @@
 		String driverClass = "oracle.jdbc.OracleDriver";  //드라이버 이름
 		String url = "jdbc:oracle:thin:@localhost:1521:xe"; //db 경로(위치)
 		String username = "c##mydb";  //user 이름
-		String password = "mydb";     //비밀번호
+		String password = "mydb"; 
 		
 		Connection conn = null;
 		

@@ -10,7 +10,7 @@
 	<h2>Web Mall에 오신 걸 환영합니다.</h2>
 	
 	<h3>
-		<a href="/jspwork2/pcontrol?action=info&pid=${product.pid, product.pname}">상품 목록</a>
+		<a href="/jspwork2/pcontrol?action=list">상품 목록</a>
 	</h3>
 </body>
 </html>

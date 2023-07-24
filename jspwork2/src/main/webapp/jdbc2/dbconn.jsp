@@ -1,6 +1,6 @@
 <%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Connection"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page import="java.sql.Connection" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,9 +11,9 @@
 <body>
 	<%
 		String driverClass = "com.mysql.cj.jdbc.Driver";  //드라이버 이름
-		String url = "jdbc:mysql://localhost:3306/mydb"; //db 경로(위치)
+		String url = "jdbc:mysql://localhost:3306/mydb";  //db 경로(위치)
 		String username = "root";  //user 이름
-		String password = "root";     //비밀번호
+		String password = "root";
 		
 		Connection conn = null;
 		

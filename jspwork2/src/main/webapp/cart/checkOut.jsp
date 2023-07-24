@@ -11,17 +11,17 @@
 <body>
 	<div id="container">
 		<h2>계산하기</h2>
-		<p>선택한 상품 목록</p>
+		<p>선택한 상품 목록
 		<hr>
 		
 		<%
-			// 장바구니 세션 유지
-			ArrayList<String> productList
+			//장바구니 세션 유지
+			ArrayList<String> productList 
 				= (ArrayList)session.getAttribute("cartList");
-			
-			// 장바구니에 들어있는 품목 출력
-			for(String product : productList)
-				out.println(product + "<br>");
+		
+		    //장바구니에 들어있는 품목 출력
+		    for(String product : productList)
+		    	out.println(product + "<br>");
 		%>
 	</div>
 </body>
